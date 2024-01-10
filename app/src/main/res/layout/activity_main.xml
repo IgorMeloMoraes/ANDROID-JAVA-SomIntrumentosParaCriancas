@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/img_violao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitXY"
+        android:onClick="violao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/violao" />
+
+
+    <ImageButton
+        android:id="@+id/img_guitarra"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitXY"
+        android:onClick="guitarra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_violao"
+        app:srcCompat="@drawable/guitarra" />
+
+    <ImageButton
+        android:id="@+id/img_baixo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitXY"
+        android:onClick="baixo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_violao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baixo" />
+
+    <ImageButton
+        android:id="@+id/img_bateria"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitXY"
+        android:onClick="bateria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/img_guitarra"
+        app:layout_constraintTop_toBottomOf="@+id/img_baixo"
+        app:srcCompat="@drawable/bateria" />
+
+
+    <ImageButton
+        android:id="@+id/img_piano"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:onClick="piano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toEndOf="@+id/img_teclado"
+        app:layout_constraintTop_toBottomOf="@+id/img_bateria"
+        app:srcCompat="@drawable/piano" />
+
+    <ImageButton
+        android:id="@+id/img_teclado"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:onClick="teclado"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_guitarra"
+        app:srcCompat="@drawable/teclado" />
+</androidx.constraintlayout.widget.ConstraintLayout>
